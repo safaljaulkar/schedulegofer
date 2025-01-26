@@ -44,13 +44,16 @@ public class TestBase {
 //	}
 
 	//@Test // annoted method run before test
+	
+	
+	
 	@BeforeTest
 	public void setup() throws IOException {
 
 		//ExtentTest logintest = extent.createTest("VerifyLoginTest");
 
 		if (driver == null) {
-			FileReader Fr = new FileReader("C:\\Users\\admin\\eclipse-workspace\\Schedular\\src\\main\\resources\\configfile\\config.properties");
+			FileReader fr1 = new FileReader(System.getProperty("user.dir") +"\\src\\main\\resources\\configfile\\config.properties");
 			prop.load(fr1); // load the properties reader, object
 		}
 
@@ -66,12 +69,15 @@ public class TestBase {
 
 		}
 	}
-
+	
 	@AfterTest
 	public void teardown() { // use to close
 		// driver.close();
 		//extent.flush(); // Ending of the report
 		System.out.println("Done");
 
+		
+		
 	}
+		
 }

@@ -8,4 +8,7 @@ public class LoginLocator {
 	public static final String login ="//button[@id='loginBtn']";
 	
 	
+	
+	
+	
 }

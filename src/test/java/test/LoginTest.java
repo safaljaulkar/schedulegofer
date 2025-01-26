@@ -24,3 +24,14 @@ public class LoginTest extends TestBase{
 	
 	
 }
+
+
+
+
+// - Title Verification Before login
+// - Validation check Process for Blank user-name and valid password
+// - Validation check process for valid user-name and blank password field
+// - Validation check process for both user-name and password fields are blank
+// - Normal Login Process with valid user-name and valid password
+// - Title Verification After login
+// - Logout process

@@ -8,7 +8,8 @@ public class ReadProperties {
 
 	public static void main(String[] args) throws IOException {
 
-		FileReader Fr = new FileReader("C:\\Users\\admin\\eclipse-workspace\\Schedular\\src\\main\\resources\\configfile\\config.properties");
+	
+		FileReader Fr = new FileReader(System.getProperty("user.dir") +"\\src\\main\\resources\\configfile\\config.properties"); 
 		Properties p = new Properties(); // object of properties class
 		p.load(Fr);
 
